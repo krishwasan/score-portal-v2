@@ -1,0 +1,23 @@
+Update your existing GitHub/Vercel project with this new zip:
+
+1. Unzip this folder anywhere on your Mac.
+2. Open your current local repo folder in Finder/VS Code.
+3. Copy the new files from this zip into your existing repo folder and replace the old ones.
+4. In Terminal, cd into your existing repo folder.
+5. Run:
+
+   git add .
+   git commit -m "Update StudentBoard practice page and layout"
+   git push
+
+6. Vercel should redeploy automatically after the push.
+
+If you want to use this zip as a totally separate local folder instead:
+   cd new-folder-name
+   git remote add origin https://github.com/krishwasan/score-portal.git
+   git branch -M main
+   git add .
+   git commit -m "Update StudentBoard practice page and layout"
+   git push -u origin main --force
+
+Use the force version only if you are replacing the repo from a fresh folder.
